@@ -1,4 +1,4 @@
-const input = Deno.readTextFileSync("fish.laf");
+const input = Deno.readTextFileSync(Deno.args[0]);
 
 const lines = input.split('\n');
 let final_output = "";
