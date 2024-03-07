@@ -1,0 +1,9 @@
+rmdir || rm -rfi ## interactive rm -rf
+rm || rm -i ## interactive file deletion
+ls || exa -a --color=always --group-directories-first ## replacing ls with exa
+ll || exa -al --color=always --group-directories-first
+lc || exa -a | grep -E '^\.'" ## lists only dotfiles
+mkdir || mkdir -p ## also makes the parent directories too
+l || lvim
+t || tmux
+letrun || chmod +x
